@@ -1,0 +1,133 @@
+---
+// interface Props {
+//   title: string;
+//   body: string;
+//   href: string;
+// }
+
+// const { href, title, body } = Astro.props;
+---
+
+<header class="header">
+  <nav class="nav">
+    <img src="../../public/logo.png" alt="Logo Cosmos" class="logo" />
+    <ul class="nav-links">
+      <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Operations</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+      <li class="nav-item">
+        <a class="nav-link cta" href="#">Open account</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="header-main">
+    <div class="header-main-text">
+      <h1>Shop Like Never <span class="highlight">Before</span></h1>
+      <h4>
+        Revolutionize your shopping experience with us. Welcome to a new era of
+        convenience.
+      </h4>
+      <a class="btn-header-main">Learn more &DownArrow;</a>
+    </div>
+    <div class="wrap-img">
+      <img src="../../public/main-img.svg" class="header-img" alt="Coding" />
+    </div>
+  </div>
+</header>
+
+<!-- STYLES -->
+
+<style>
+  .header {
+    padding: 0 3rem;
+    height: 100vh;
+    font-size: 1.7rem;
+  }
+  .logo {
+    width: 15rem;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-links {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    list-style: none;
+  }
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+  }
+  .cta {
+    background-color: #5108af;
+    padding: 2rem;
+    border-radius: 20px;
+    font-size: 1.85rem;
+    color: #f4f1ed;
+  }
+  .header-main {
+    display: flex;
+
+    justify-items: center;
+    align-items: flex-start;
+
+    margin-top: 10rem;
+    gap: 5rem;
+    min-height: 100vh;
+  }
+
+  .wrap-img {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .header-img {
+    width: 80rem;
+
+    overflow: hidden;
+    border-radius: 72px;
+
+    object-fit: cover;
+    object-position: right;
+  }
+
+  /*  */
+  .header-main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 3rem;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+
+  .highlight {
+    position: relative;
+    margin: 1rem;
+    padding: 0.5rem;
+    color: #f4f1ed;
+  }
+  .highlight::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    transform: scale(1.07, 1.05) skewX(-15deg);
+    background-color: #5108af;
+  }
+  .btn-header-main {
+    color: #0d0f14;
+    border: none;
+  }
+</style>
