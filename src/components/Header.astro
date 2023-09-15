@@ -22,16 +22,22 @@
   </nav>
   <div class="header-main">
     <div class="header-main-text">
-      <h1>Shop Like Never <span class="highlight">Before</span></h1>
-      <h4>
-        Revolutionize your shopping experience with us. Welcome to a new era of
-        convenience.
-      </h4>
-      <a class="btn-header-main">Learn more &DownArrow;</a>
+      <h1>
+        Elevate Your Online Shopping <br /><span class="highlight"
+          >Experience</span
+        >
+      </h1>
     </div>
-    <div class="wrap-img">
-      <img src="../../public/main-img.svg" class="header-img" alt="Coding" />
-    </div>
+    <h4>
+      Experience the future of shopping with <span class="highlight"
+        >Cosmos</span
+      >. Our comprehensive selection and user-friendly platform make online
+      shopping a breeze.
+    </h4>
+    <a class="btn-header-main">Learn more &DownArrow;</a>
+  </div>
+  <div class="wrap-img">
+    <img src="../../public/main-img.svg" class="header-img" alt="Coding" />
   </div>
 </header>
 
@@ -62,56 +68,60 @@
     color: #333;
   }
   .cta {
-    background-color: #5108af;
+    background-color: #824ec2;
     padding: 2rem;
     border-radius: 20px;
+    font-weight: 600;
     font-size: 1.85rem;
     color: #f4f1ed;
   }
   .header-main {
     display: flex;
-
+    flex-direction: column;
     justify-items: center;
-    align-items: flex-start;
+    align-items: center;
 
-    margin-top: 10rem;
-    gap: 5rem;
-    min-height: 100vh;
+    gap: 1rem;
+    margin-top: -3rem;
   }
 
   .wrap-img {
     max-width: 100%;
     overflow: hidden;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
   }
   .header-img {
-    width: 80rem;
-
-    overflow: hidden;
-    border-radius: 72px;
-
-    object-fit: cover;
-    object-position: right;
+    width: 85rem;
+    margin-top: -5rem;
   }
 
   /*  */
   .header-main-text {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    padding: 3rem;
+    gap: 1rem;
+    padding: 2rem;
+
+    text-align: center;
   }
   h1 {
-    font-size: 6rem;
+    font-size: 8rem;
   }
   h4 {
     font-size: 2rem;
+    max-width: 75%;
+    margin: 0 auto;
   }
 
   .highlight {
     position: relative;
-    margin: 1rem;
     padding: 0.5rem;
     color: #f4f1ed;
+    font-size: 110%;
+    margin: 0 1rem;
   }
   .highlight::after {
     display: block;
