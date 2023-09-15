@@ -1,0 +1,107 @@
+---
+import Features from "./Features.astro";
+import Header from "./Header.astro";
+---
+
+<section class="section" id="section--1">
+  <div class="section-title">
+    <h2 class="section-description">Advantages</h2>
+    <h3 class="section-header">Shopping Reimagined: Everything You Want.</h3>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <div class="card-img">
+        <img src="../../public/Features/icon-1.svg" alt="" />
+      </div>
+      <div class="card-text">
+        <h4>Hello</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, quas
+          consequatur? Iure libero molestiae laborum in ad commodi ipsum eaque
+          aut repudiandae doloremque qui.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">
+        <img src="../../public/Features/icon-2.svg" alt="" />
+      </div>
+      <div class="card-text">
+        <h4>Hello</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, quas
+          consequatur? Iure libero molestiae laborum in ad commodi ipsum eaque
+          aut repudiandae doloremque qui.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">
+        <img src="../../public/Features/icon-3.svg" alt="" />
+      </div>
+      <div class="card-text">
+        <h4>Hello</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, quas
+          consequatur? Iure libero molestiae laborum in ad commodi ipsum eaque
+          aut repudiandae doloremque qui.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STYLES -->
+
+<style>
+  .cards {
+    display: flex;
+    gap: 2rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    border-radius: 25px;
+    padding: 2rem;
+    border-radius: 50px;
+
+    background-color: #dacaed;
+  }
+  .card:hover {
+    transition: all 0.3s;
+    transform: translateY(-15px);
+  }
+  .card-img {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-img img {
+    width: 75%;
+    border-radius: 50%;
+  }
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .card-text h4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .card-text p {
+    font-size: 1.5rem;
+  }
+</style>
+<!--  -->
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

@@ -5,7 +5,8 @@ interface Props {
 
 const { title } = Astro.props;
 import Header from "../components/Header.astro";
-import Section from "../components/Section.astro";
+import Features from "../components/Features.astro";
+import Cards from "../components/Cards.astro";
 ---
 
 <!doctype html>
@@ -17,13 +18,14 @@ import Section from "../components/Section.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap"
       rel="stylesheet"
     />
     <title>COSMOS</title>
   </head>
   <body>
     <Header />
-    <Section />
+    <Features />
+    <Cards />
   </body>
 </html>
