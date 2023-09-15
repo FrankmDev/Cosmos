@@ -1,13 +1,9 @@
----
-
----
-
 <header class="header">
-  <nav class="nav">
+  <nav class="nav sticky">
     <img src="../../public/logo.png" alt="Logo Cosmos" class="logo" />
     <ul class="nav-links">
       <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Operations</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Advantages</a></li>
       <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
       <li class="nav-item">
         <a class="nav-link cta" href="#">Open account</a>
@@ -58,6 +54,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 100;
   }
   .nav-links {
     display: flex;
@@ -112,7 +109,9 @@
   }
 
   .btn-header-main {
-    color: #0d0f14;
+    color: #242730;
     border: none;
+    font-size: 80%;
+    cursor: pointer;
   }
 </style>

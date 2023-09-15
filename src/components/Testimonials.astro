@@ -1,0 +1,174 @@
+<section class="section" id="section--3">
+  <div class="section-title">
+    <h2 class="section-description">Not sure yet?</h2>
+    <h3 class="section-header">
+      Millions of Cosmoners are already making their lifes simpler.
+    </h3>
+  </div>
+  <div class="slider">
+    <div class="slide slide--1">
+      <div class="testimonial">
+        <h5 class="testimonial-header">Best comercial decision ever!</h5>
+        <blockquote class="testimonial-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium
+          quas quisquam non? Quas voluptate nulla minima deleniti optio ullam
+          nesciunt, numquam corporis et asperiores laboriosam sunt, praesentium
+          suscipit blanditiis. Necessitatibus id alias reiciendis, perferendis
+          facere pariatur dolore veniam autem esse non voluptatem saepe
+          provident nihil molestiae.
+        </blockquote>
+        <address class="testimonial-author">
+          <img src="../../public/user-1.jpg" class="testimonial-photo" />
+          <h6 class="testimonial-name">Aarav Lynn</h6>
+          <p class="testimonial-location">San Francisco, USA</p>
+        </address>
+      </div>
+    </div>
+
+    <div class="slide slide--2">
+      <div class="testimonial">
+        <h5 class="testimonial-header">
+          Elevate Your Online Retail Experience
+        </h5>
+        <blockquote class="testimonial-text">
+          Quisquam itaque deserunt ullam, quia ea repellendus provident, ducimus
+          neque ipsam modi voluptatibus doloremque, corrupti laborum. Incidunt
+          numquam perferendis veritatis neque repellendus. Lorem, ipsum dolor
+          sit amet consectetur adipisicing elit. Illo deserunt exercitationem
+          deleniti.
+        </blockquote>
+        <address class="testimonial-author">
+          <img src="../../public/user-2.jpg" alt="" class="testimonial-photo" />
+          <h6 class="testimonial-name">Miyah Miles</h6>
+          <p class="testimonial-location">London, UK</p>
+        </address>
+      </div>
+    </div>
+
+    <div class="slide slide--3">
+      <div class="testimonial">
+        <h5 class="testimonial-header">
+          All Your Shopping Desires, and Beyond.
+        </h5>
+        <blockquote class="testimonial-text">
+          Debitis, nihil sit minus suscipit magni aperiam vel tenetur incidunt
+          commodi architecto numquam omnis nulla autem, necessitatibus
+          blanditiis modi similique quidem. Odio aliquam culpa dicta beatae quod
+          maiores ipsa minus consequatur error sunt, deleniti saepe aliquid quos
+          inventore sequi. Necessitatibus id alias reiciendis, perferendis
+          facere.
+        </blockquote>
+        <address class="testimonial-author">
+          <img src="../../public/user-1.jpg" alt="" class="testimonial-photo" />
+          <h6 class="testimonial-name">Francisco Gomes</h6>
+          <p class="testimonial-location">Lisbon, Portugal</p>
+        </address>
+      </div>
+    </div>
+    <button class="slider-btn slider-btn--left"
+      ><ion-icon class="icon" name="arrow-back"></ion-icon></button
+    >
+    <button class="slider-btn slider-btn--right"
+      ><ion-icon class="icon" name="arrow-forward"></ion-icon></button
+    >
+  </div>
+</section>
+
+<!-- STYLES -->
+<style>
+  #section--3 {
+    padding-bottom: 0rem;
+  }
+  .slider {
+    max-width: 100rem;
+    height: 55rem;
+    margin: 0 auto;
+    position: relative;
+  }
+  .slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s;
+  }
+  .slide > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    font-family: inherit;
+    color: #824ec2;
+    border-radius: 50%;
+    height: 5.5rem;
+    width: 5.5rem;
+    font-size: 3.5rem;
+    cursor: pointer;
+  }
+  .slider-btn .slider-btn--left {
+    left: 6%;
+    transform: translate(-50%, -50%);
+  }
+
+  .slider-btn--right {
+    right: 6%;
+    transform: translate(50%, -50%);
+  }
+  .icon {
+    top: 10%;
+    position: relative;
+  }
+  /*  */
+  .testimonial {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+
+    border-radius: 25px;
+    padding: 3.5rem;
+    border-radius: 50px;
+
+    background-color: #e6dcf3;
+
+    -moz-box-shadow: 0px 0px 17px -4px rgba(131, 82, 196, 1);
+    box-shadow: 0px 0px 17px -4px rgba(131, 82, 196, 1);
+  }
+  .testimonial-header {
+    font-size: 2rem;
+  }
+  .testimonial-text {
+    font-size: 1.7rem;
+  }
+  .testimonial-author {
+    display: grid;
+    grid-template-columns: 6.5rem 1fr;
+    column-gap: 1.5rem;
+    place-items: center;
+  }
+  .testimonial-photo {
+    width: 100%;
+    border-radius: 50%;
+    grid-row: 1 / span 2;
+  }
+  .testimonial-name {
+    font-size: 1.2rem;
+    color: #5e3295;
+  }
+  .testimonial-location {
+    font-size: 1.1rem;
+  }
+</style>
