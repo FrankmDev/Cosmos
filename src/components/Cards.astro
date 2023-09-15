@@ -3,10 +3,10 @@ import Features from "./Features.astro";
 import Header from "./Header.astro";
 ---
 
-<section class="section" id="section--1">
+<section class="section" id="section--2">
   <div class="section-title">
     <h2 class="section-description">Advantages</h2>
-    <h3 class="section-header">Shopping Reimagined: Everything You Want.</h3>
+    <h3 class="section-header">Why Shoppers Love Us</h3>
   </div>
   <div class="cards">
     <div class="card">
@@ -14,11 +14,11 @@ import Header from "./Header.astro";
         <img src="../../public/Features/icon-1.svg" alt="" />
       </div>
       <div class="card-text">
-        <h4>Hello</h4>
+        <h4>Fast Shipping</h4>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, quas
-          consequatur? Iure libero molestiae laborum in ad commodi ipsum eaque
-          aut repudiandae doloremque qui.
+          Enjoy speedy and secure shipping at Cosmos. Your orders will arrive
+          quickly and in perfect condition. Shop confidently with us! Lorem
+          ipsum dolor sit amet consectetur adipisicing elit.
         </p>
       </div>
     </div>
@@ -27,11 +27,11 @@ import Header from "./Header.astro";
         <img src="../../public/Features/icon-2.svg" alt="" />
       </div>
       <div class="card-text">
-        <h4>Hello</h4>
+        <h4>Product Selection</h4>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, quas
-          consequatur? Iure libero molestiae laborum in ad commodi ipsum eaque
-          aut repudiandae doloremque qui.
+          Explore a wide variety of products at Cosmos. We offer an extensive
+          range of choices to cater to your unique needs and preferences. Find
+          everything you need in one place.
         </p>
       </div>
     </div>
@@ -40,11 +40,11 @@ import Header from "./Header.astro";
         <img src="../../public/Features/icon-3.svg" alt="" />
       </div>
       <div class="card-text">
-        <h4>Hello</h4>
+        <h4>Free Returns</h4>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, quas
-          consequatur? Iure libero molestiae laborum in ad commodi ipsum eaque
-          aut repudiandae doloremque qui.
+          Enjoy hassle-free returns with us. If you're not satisfied with your
+          purchase, our easy return process ensures a seamless experience. We're
+          here to make your shopping worry-free.
         </p>
       </div>
     </div>
@@ -63,13 +63,20 @@ import Header from "./Header.astro";
     flex-direction: column;
     gap: 2rem;
 
+    width: 35%;
     border-radius: 25px;
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: 50px;
 
-    background-color: #dacaed;
+    background-color: #e6dcf3;
+
+    --webkit-box-shadow: 0px 0px 17px -4px rgba(131, 82, 196, 1);
+    -moz-box-shadow: 0px 0px 17px -4px rgba(131, 82, 196, 1);
+    box-shadow: 0px 0px 17px -4px rgba(131, 82, 196, 1);
   }
-  .card:hover {
+
+  .card:hover,
+  .card:active {
     transition: all 0.3s;
     transform: translateY(-15px);
   }
@@ -91,7 +98,7 @@ import Header from "./Header.astro";
     align-items: center;
   }
   .card-text h4 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-weight: 700;
   }
   .card-text p {
