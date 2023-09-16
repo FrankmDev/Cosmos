@@ -6,7 +6,7 @@
       <li class="nav-item"><a class="nav-link" href="#">Advantages</a></li>
       <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
       <li class="nav-item">
-        <a class="nav-link cta" href="#">Open account</a>
+        <a class="nav-link" id="cta" href="#">Open account</a>
       </li>
     </ul>
   </nav>
@@ -34,14 +34,21 @@
 <!-- STYLES -->
 
 <style>
-  .nav-link.cta {
+  #cta {
     background-color: #824ec2;
     padding: 2rem;
     border-radius: 20px;
     font-weight: 600;
     font-size: 1.85rem;
     color: #f4f1ed;
+    transition: all 0.3s;
   }
+  #cta:hover,
+  #cta:active {
+    background-color: #511c91;
+    color: #f4f1ed;
+  }
+
   .header {
     padding: 0 3rem;
     height: 100vh;
@@ -65,6 +72,7 @@
   .nav-link {
     text-decoration: none;
     color: #333;
+    transition: all 0.3s;
   }
 
   .header-main {
@@ -111,7 +119,36 @@
   .btn-header-main {
     color: #242730;
     border: none;
-    font-size: 80%;
+    font-size: 85%;
     cursor: pointer;
+    transition: all 0.3s;
+
+    position: relative;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+
+  .btn-header-main:focus:after,
+  .btn-header-main:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  .btn-header-main:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #824ec2;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+  .nav-link:hover,
+  .nav-link:active {
+    color: #511c91;
   }
 </style>

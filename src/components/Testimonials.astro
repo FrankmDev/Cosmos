@@ -72,10 +72,71 @@
       ><ion-icon class="icon" name="arrow-forward"></ion-icon></button
     >
   </div>
+  <div class="btn-div"><button class="btnFinal">Sign Up</button></div>
 </section>
 
 <!-- STYLES -->
 <style>
+  .btn-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btnFinal {
+    font-size: 2.6rem;
+    font-weight: 600;
+    width: 20%;
+
+    position: relative;
+    cursor: pointer;
+
+    background-color: #824ec2;
+    padding: 2.2rem;
+    border-radius: 20px;
+
+    color: #f4f1ed;
+    transition: all 0.3s;
+
+    border: none;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+  }
+  .btnFinal::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      45deg,
+      #efaf00,
+      #824ec2,
+      #c5dcdd,
+      #efaf00,
+      #824ec2,
+      #c5dcdd,
+      #efaf00,
+      #824ec2,
+      #c5dcdd
+    );
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+  }
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
   #section--3 {
     padding-bottom: 0rem;
   }
