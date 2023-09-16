@@ -2,7 +2,6 @@ const btnScroll = document.querySelector(".btn-header-main");
 const featureSection = document.querySelector("#section--1");
 const sections = document.querySelectorAll(".section");
 const header = document.querySelector(".header");
-//
 
 // REVEAL SECTION
 
@@ -70,20 +69,12 @@ const slider = function () {
   };
   init();
 
-  // Event handlers
   btnRight.addEventListener("click", nextSlide);
   btnLeft.addEventListener("click", prevSlide);
 
   document.addEventListener("keydown", function (e) {
     if (e.key === "ArrowLeft") prevSlide();
     e.key === "ArrowRight" && nextSlide();
-  });
-
-  dotContainer.addEventListener("click", function (e) {
-    if (e.target.classList.contains("dots__dot")) {
-      const { slide } = e.target.dataset;
-      goToSlide(slide);
-    }
   });
 };
 slider();
