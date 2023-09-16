@@ -72,12 +72,16 @@ import Header from "./Header.astro";
 
     -moz-box-shadow: 0px 0px 17px -4px rgba(131, 82, 196, 1);
     box-shadow: 0px 0px 17px -4px rgba(131, 82, 196, 1);
+
+    transition: all 0.4s ease-in;
   }
 
   .card:hover,
   .card:active {
     transition: all 0.3s;
-    transform: translateY(-15px);
+    transform: translateY(-10px);
+    outline: rgba(131, 82, 196, 1) 0.1em solid;
+    border-radius: 2.5rem 0 2.5rem 0;
   }
   .card-img {
     display: flex;
@@ -87,8 +91,8 @@ import Header from "./Header.astro";
   }
 
   .card-img img {
-    width: 75%;
-    border-radius: 50%;
+    width: 60%;
+    border-radius: 25%;
   }
   .card-text {
     display: flex;
